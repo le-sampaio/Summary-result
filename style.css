@@ -10,16 +10,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30vh 0 0 0 ;
+    margin: 15vh 0 0 0 ;
 }
 
 .result{
+    position: relative;
     background:linear-gradient(to top,hsl(241, 81%, 54%)20%,hsl(252, 100%, 67%) )fixed; 
     padding: 50px 35px 35px 35px ;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.06);
     height: 25rem;
     width: 18rem;
     border-radius: 8%;
     text-align: center;
+    left: 15px;
     
 }
 
@@ -65,9 +68,9 @@ body{
 .summary{
     height: 25rem;
     width: 18rem;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px 20px 40px;
     background-color: hsl(0, 0%, 100%);
-    box-shadow: 5px 5px 5px  rgb(0 0 0 / 20%);
+    box-shadow:10px 10px 10px  rgba(0, 0, 0, 0.05);
     border-radius: 0 8% 8% 0;
 }
 
@@ -79,50 +82,92 @@ body{
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 20px 0 20px 0 ;
     font-weight: 600;
     font-size: 14px;
     
 }
 
-.reaction, .value-reaction{
-    background-color: hsl(0, 100%, 67%, 0.10);
-    padding: 15px 10px 15px 10px;
-    color: hsl(0, 100%, 67%);
+.number-1{
+    padding: 12px 10px 12px 10px;
     margin: 0 0 10px 0;
+}
+
+.light{
+    position: relative;
     
 }
 
-.txt-memory, .value-memory{
+.reaction{
+    background-color: hsl(0, 100%, 67%, 0.10);
+    padding: 10px 30px 10px 80px;
+    color: hsl(0, 100%, 67%);
+    margin: 0 0 10px 0; 
+}
+
+.value-reaction{
+    background-color: hsl(0, 100%, 67%, 0.10);
+    padding: 12px 10px 12px 10px;
+    margin: 0 0 10px 0;
+
+    
+}
+
+.txt-memory{
     background-color: hsl(39, 100%, 56%, 0.10);
-    padding: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
     color: hsl(39, 100%, 56%);
     margin: 0 0 10px 0;
     
 }
 
-.txt-verbal, .value-verbal{
+.value-memory{
+    background-color: hsl(39, 100%, 56%, 0.10);
+    padding: 12px 10px 12px 10px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.txt-verbal{
     background-color: hsl(166, 100%, 37%, 0.10);
-    padding: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
     color: hsl(166, 100%, 37%);
     margin: 0 0 10px 0;
     
 }
 
-.txt-visual, .value-visual{
+.value-verbal{
+    background-color: hsl(166, 100%, 37%, 0.10);
+    padding: 12px 10px 12px 10px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.txt-visual{
     background-color: hsl(234, 85%, 45%, 0.10);
-    padding: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
     color: hsl(234, 85%, 45%);
     margin: 0 0 10px 0;
 }
 
+.value-visual{
+    background-color: hsl(234, 85%, 45%, 0.10);
+    padding: 12px 0 12px 0;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
 .btn-submite{
-    
     padding: 10px 95px 10px 80px;
     background-color: hsl(224, 30%, 27%);
     border: none;
     border-radius: 20px;
     color: #fff;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-submite:hover{
+    background:linear-gradient(to top,hsl(241, 81%, 54%)20%,hsl(252, 100%, 67%) ); 
 }
