@@ -6,5 +6,5 @@
   <ul>CSS</ul>
 </li>
 
-<h2>Vizualizar projeto:</h2>
-<p>https://let-sampaio.github.io/Summary-result/</p>
+<h2>Vizualizar projeto: https://summary-result-chi.vercel.app/</h2>
+
